@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/custom.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img src="./images/logo.svg" alt="" />
+          </div>
+          <div class="col">
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active" href="">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#produtos">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contatos">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="sobre">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <h2>Sobre nós</h2>
+            <p class="sobre txt-justificado">
+              Olá. Somos a Hortifruti Orgânicos. Pra gente falar de comida e
+              saúde é coisa séria. Por isso, criamos um jeito diferente de
+              oferecer para nossos clientes o frescor, cor e sabor das feiras de
+              hortifruti com a praticidade de um supermercado. Compramos
+              produtos orgânicos diretos do produtor. Produtos naturais, sem
+              agrotóxicos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="produtos">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>Produtos</h2>
+
+            <div class="card d-flex align-items-center">
+              <img
+                src="./images/banana-prata-organica.webp"
+                alt="Banana Prata"
+                class="img-fluid"
+              />
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title">Banana Prata</h5>
+                <p class="card-text">Banana prata orgânica</p>
+                <a
+                  class="btn btn-success"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-1"
+                  >VER PRODUTO</a
+                >
+              </div>
+            </div>
+
+            <div class="card d-flex align-items-center">
+              <img
+                src="./images/laranja-seleta.webp"
+                alt="Laranja Seleta"
+                class="img-fluid"
+              />
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title">Laranja</h5>
+                <p class="card-text">Laranja Seleta</p>
+                <a
+                  class="btn btn-success"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-2"
+                  >VER PRODUTO</a
+                >
+              </div>
+            </div>
+
+            <div class="card d-flex align-items-center">
+              <img
+                src="./images/tomate-italiano.webp"
+                alt="Goiaba"
+                class="img-fluid"
+              />
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title">Tomate italiano</h5>
+                <p class="card-text">Tomate italiano orgânico</p>
+                <a
+                  class="btn btn-success"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-3"
+                  >VER PRODUTO</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <h2>Nosso Contato</h2>
+            <p>Deseja nos enviar alguma sugestão?</p>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <form class="form">
+              <div class="input-group">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="nome"
+                  placeholder="Nome"
+                />
+              </div>
+
+              <div class="input-group">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+
+              <div class="input-group">
+                <textarea class="form-control" name="" rows="5"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-lg btn-success">
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal fade" id="modal-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Banana Prata</h5>
+            <button
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h6>Informações</h6>
+            <p class="txt-justificado">
+              A Banana Prata ou Banana Anã Grande, tem aproximadamente 15 cm de
+              comprimento, casca amarelo esverdeado, de cinco facetas, polpa
+              menos doce que a da banana nanica, sendo mais consistente e
+              indicada para fritar e no preparo de vitaminas.
+            </p>
+            <p>Preço: R$11,99 / (Unidade com aprox. 1,2kg)</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Laranja</h5>
+            <button
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h6>Informações</h6>
+            <p class="txt-justificado">
+              Além de ser rica em vitamina C, a fruta possui flavonoides e
+              diversos nutrientes importantes para prevenir doenças e deixar o
+              organismo mais resistente.
+            </p>
+            <p>Preço: R$1,89 /Unidade</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-3">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Tomate italiano</h5>
+            <button
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h6>Informações</h6>
+            <p class="txt-justificado">
+              Possui formato alongado, é o melhor tomate para fazer molho,
+              porque tem menos sementes e é mais carnudo.
+            </p>
+            <p>Preço: R$8,49 / 250g</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
